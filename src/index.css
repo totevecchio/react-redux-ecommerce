@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navbar-icon {
+        @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg 
+        bg-gray-800 text-yellow-400 hover:bg-yellow-600 
+        hover:text-white rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer 
+        md:mx-0 md:mr-8 md:ml-8
+        ;
+    }
+    .navbar-icon-left {
+        @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg 
+        bg-gray-800 text-yellow-400 hover:bg-pink-500
+        hover:text-white rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer 
+        md:mx-0 md:mr-8 md:ml-8
+        ;
+    }
+    .footer-icon-right {
+        @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-2 shadow-lg 
+        bg-gray-800 text-yellow-400 hover:bg-pink-500 
+        hover:text-white rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer 
+        md:mx-0 md:mr-8 md:ml-8
+        ;
+    }
+    .footer-icon-left {
+        @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-2 shadow-lg 
+        bg-gray-800 text-yellow-400 hover:bg-yellow-600 
+        hover:text-white rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer 
+        md:mx-0 md:mr-8 md:ml-8
+        ;
+    }
+    .navbar-tooltip { 
+        @apply absolute w-auto p-2 m-2 min-w-max left-14 
+        rounded-md shadow-md text-white
+        bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left
+        md:top-14 md:left-0; 
+    }
+    .footer-tooltip { 
+        @apply absolute w-auto p-2 m-2 min-w-max 
+        rounded-md shadow-md text-white
+        bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left
+        md:bottom-14 md:left-0; 
+    }
+    .footer-copyright-tooltip {
+        @apply absolute w-auto p-2 m-2 min-w-max left-14 
+        rounded-md shadow-md text-white
+        bg-gray-900 font-bold transition-all duration-100 scale-100 md:scale-0 origin-left bottom-0
+        text-xs
+        md:bottom-0 md:right-10;    
+    }
+    .carousel {
+        @apply inline-flex overflow-x-hidden
+      }
+      .banner { 
+          @apply bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500
+      }
+      .btn { 
+        @apply flex flex-row w-44 rounded-3xl py-2 px-3 uppercase font-bold tracking-wide 
+        items-center justify-center mt-2 mb-2 mx-auto shadow-lg 
+        bg-yellow-400 hover:bg-yellow-600 
+        hover:text-white hover:rounded-xl transition-all duration-100 ease-linear cursor-pointer 
+        md:mx-0 md:mr-8 md:ml-8
+      }
+      .title { 
+          @apply rounded-sm py-2 px-3 uppercase font-bold tracking-wide 
+          items-center justify-center mt-2 mb-2 mx-auto shadow
+      }
+      .text {
+        @apply rounded-sm py-2 px-3 uppercase text-sm font-bold tracking-wide 
+        mt-2 mb-2 mx-auto shadow
+      }
+      .price {
+            @apply rounded-sm py-2 px-3 uppercase font-bold tracking-wide 
+            mt-2 mb-2 mx-auto shadow text-center
+      }
+      .text-cart {
+            @apply rounded-sm py-2 px-3 uppercase text-sm font-bold tracking-wide 
+            mt-2 mb-2 mx-auto 
+      }
+    .qty{
+        @apply rounded-sm py-2 px-3 uppercase font-bold tracking-wide 
+        items-center justify-center mt-2 mb-2 mx-auto w-14
+    }
+    .title-single { 
+        @apply rounded-sm py-2 px-3 uppercase font-bold tracking-wide 
+        items-center justify-center mt-2 mb-2 mx-auto shadow text-2xl text-center
+    }
+    .text-single {
+      @apply rounded-sm py-2 px-3 uppercase text-sm font-bold tracking-wide 
+      mt-2 mb-2 mx-auto text-center
+    }
+    .price-single {
+          @apply rounded-sm py-2 px-3 uppercase font-bold tracking-wide 
+          mt-2 mb-2 mx-auto  text-center text-lg
+    }
+}
