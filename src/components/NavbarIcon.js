@@ -13,7 +13,7 @@ const NavbarIcon = ({
     <Link to={path} target={target}>
       <div className={`${iconClassName} group`}>
         {icon}
-        <span className={`${tooltipClassName} group-hover:scale-100`}>
+        <span className={`${tooltipClassName} md:group-hover:scale-100`}>
           {text}
         </span>
       </div>

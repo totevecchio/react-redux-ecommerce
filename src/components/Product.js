@@ -7,7 +7,7 @@ import { loadCurrentItem, addToCart } from "../redux/Shopping/shopping-actions";
 
 const Product = ({ product, addToCart, loadCurrentItem }) => {
   return (
-    <div className="flex flex-col shadow-md w-80 justify-center items-center mb-14">
+    <div className="flex flex-col	shadow-md sm:w-80 w-64 justify-center items-center mb-14">
       <img src={product.image} alt={product.title} className='w-60 rounded-md'/>
 
       <div className='w-60 mb-3'>

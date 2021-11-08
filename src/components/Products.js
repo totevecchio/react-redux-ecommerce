@@ -6,8 +6,8 @@ import Banner from "./Banner";
 const Products = ({ products }) => {
   return (
     <div >
-      <Banner />
-      <div className="mt-10 w-screen product-box mx-2 grid md:grid-cols-3 grid-cols-2 justify-items-center">
+      <div className='hidden md:block'><Banner /></div>
+      <div className="mt-4 pl-20 sm:pl-0 sm:mt-10 w-screen product-box mx-2 md:grid  sm:grid-cols-2 lg:grid-cols-3 justify-center justify-items-center">
         {products.map((product) => (
           <Product key={product.id} product={product} />
         ))}

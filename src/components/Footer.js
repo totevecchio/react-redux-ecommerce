@@ -27,8 +27,8 @@ const Footer = () => {
         />
       </div>
       <div
-        className="right m-0 flex mb-0 mt-0
-      text-white shadow-lg w-screen flex-row h-16 justify-end" 
+        className="right m-0 sm:flex mb-0 mt-0
+      text-white shadow-lg w-screen flex-row h-16 justify-end hidden" 
       >
         <NavbarIcon
           icon={<FaInstagram size="28" />}

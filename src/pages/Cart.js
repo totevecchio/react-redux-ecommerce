@@ -22,14 +22,14 @@ const Cart = ({ cart }) => {
   }, [cart, totalPrice, totalItems, setTotalPrice, setTotalItems]);
 
   return (
-    <div className="mt-10 h-screen md:mb-20 flex flex-row justify-center">
-      <div className="mt-10 w-screen  mx-2 justify-items-center">
+    <div className="md:mb-20 flex flex-col sm:flex-row mt-4 pl-20 w-screen mr-2 justify-center justify-items-center">
+      <div className="mt-10 md:w-screen  mx-2 justify-items-center md:mt-14">
         {cart.map((item) => (
           <CartItem key={item.id} item={item} />
         ))}
       </div>
-      <div className="mt-10 mx-2 justify-items-center ounded-sm py-2 px-3 uppercase font-bold tracking-wide 
-           mb-2  shadow text-center">
+      <div className="text-cart sm:mt-14 mx-2 justify-items-center ounded-sm py-2 px-3 uppercase font-bold tracking-wide 
+           mb-2  sm:shadow text-center sm:h-screen">
         <h4>Cart Summary</h4>
         <div>
           <span>TOTAL: ({totalItems} items)</span><br />

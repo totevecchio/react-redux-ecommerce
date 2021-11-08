@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaTrashAlt } from "react-icons/fa";
 
 import { connect } from "react-redux";
 import {
@@ -15,40 +16,36 @@ const CartItem = ({ item, adjustQty, removeFromCart }) => {
   };
 
   return (
-    <div className='shadow-md flex items-center m-14'>
-      <img className='rounded-md w-32'
-        src={item.image}
-        alt={item.title}
-      />
-      <div className='flex'>
-        <p className='text-cart'>{item.title}</p>
+    <div className="flex flex-col md:flex-row	shadow-md sm:w-80 md:w-full justify-center md:justify-start items-center mb-14">
+      <img className="rounded-md w-32" src={item.image} alt={item.title} />
+      <div className="flex flex-col md:flex-row">
+        <p className="text-cart">{item.title}</p>
         {/* <p className='text-cart'>{item.description}</p> */}
-        <p className='text-cart'>$ {item.price}</p>
+        <p className="text-cart">$ {item.price}</p>
       </div>
-      <div >
-        <div >
-          <label htmlFor="qty" className='qty'>Qty</label>
-          <input
-            min="1"
-            type="number"
-            id="qty"
-            name="qty"
-            value={input}
-            onChange={onChangeHandler}
-            className='qty'
-          />
+      <div>
+        <div>
+            <label htmlFor="qty" className="qty">
+              Qty
+            </label>
+            <input
+              min="1"
+              type="number"
+              id="qty"
+              name="qty"
+              value={input}
+              onChange={onChangeHandler}
+              className="qty"
+            />
+          </div>
         </div>
-      </div>
-      <button
+        <button
           onClick={() => removeFromCart(item.id)}
-          className='h-5 w-5 '
+          className="h-5 w-5 md:mb-2 ml-4 "
         >
-          <img
-            src="https://image.flaticon.com/icons/svg/709/709519.svg"
-            alt="remove"
-          />
+          <FaTrashAlt />
         </button>
-    </div>
+      </div>
   );
 };
 

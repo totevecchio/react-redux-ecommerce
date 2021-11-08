@@ -5,9 +5,9 @@ import { addToCart } from "../redux/Shopping/shopping-actions";
 
 const SingleItem = ({ current, addToCart }) => {
   return (
-    <div className="mt-10 h-screen md:mb-20 flex justify-center">
-    <div className="flex flex-col shadow-md justify-center items-center mb-14 w-2/4">
-      <img className='rounded-md w-96'
+    <div className="mt-10 md:h-screen md:mb-20 flex justify-center">
+    <div className="flex flex-col md:shadow-md justify-center md:mt-14 items-center mb-14 w-3/4 pt-2 pl-14 pb-20">
+      <img className='rounded-md sm:w-32'
         src={current.image}
         alt={current.title}
       />
