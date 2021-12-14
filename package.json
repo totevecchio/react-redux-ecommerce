@@ -2,12 +2,14 @@
   "name": "ecoomerce",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://totevecchio.github.io/react-redux-ecommerce",
   "dependencies": {
     "@craco/craco": "^6.3.0",
     "@tailwindcss/jit": "^0.1.18",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "gh-pages": "^3.2.3",
     "i": "^0.3.7",
     "infinite-react-carousel": "^1.2.11",
     "npm": "^8.1.1",
@@ -27,7 +29,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
