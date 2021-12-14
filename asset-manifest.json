@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-redux-ecommerce/static/css/main.8d5023ca.chunk.css",
+    "main.js": "/react-redux-ecommerce/static/js/main.a59dcf00.chunk.js",
+    "main.js.map": "/react-redux-ecommerce/static/js/main.a59dcf00.chunk.js.map",
+    "runtime-main.js": "/react-redux-ecommerce/static/js/runtime-main.5b9eb65c.js",
+    "runtime-main.js.map": "/react-redux-ecommerce/static/js/runtime-main.5b9eb65c.js.map",
+    "static/css/2.674c27c3.chunk.css": "/react-redux-ecommerce/static/css/2.674c27c3.chunk.css",
+    "static/js/2.b194103f.chunk.js": "/react-redux-ecommerce/static/js/2.b194103f.chunk.js",
+    "static/js/2.b194103f.chunk.js.map": "/react-redux-ecommerce/static/js/2.b194103f.chunk.js.map",
+    "index.html": "/react-redux-ecommerce/index.html",
+    "static/css/2.674c27c3.chunk.css.map": "/react-redux-ecommerce/static/css/2.674c27c3.chunk.css.map",
+    "static/css/main.8d5023ca.chunk.css.map": "/react-redux-ecommerce/static/css/main.8d5023ca.chunk.css.map",
+    "static/js/2.b194103f.chunk.js.LICENSE.txt": "/react-redux-ecommerce/static/js/2.b194103f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b9eb65c.js",
+    "static/css/2.674c27c3.chunk.css",
+    "static/js/2.b194103f.chunk.js",
+    "static/css/main.8d5023ca.chunk.css",
+    "static/js/main.a59dcf00.chunk.js"
+  ]
+}
